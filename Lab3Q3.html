@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            margin: 20px auto;
+        }
+        .image {
+            position: absolute;
+            width: 100px;
+            height: auto;
+        }
+        .img1 {
+            top: 0px;
+            left: 350px;
+        }
+        .img2 {
+            top: 0px;
+            left: 400px;
+        }
+        .img3 {
+            top: 50px;
+            left: 100px;
+        }
+        .img4 {
+            top: 50px;
+            left: 205px;
+        }
+        .img5 {
+            top: 220px;
+            left: 60px;
+            z-index: 2;
+        }
+        .img6 {
+            top: 155px;
+            left: 50px;
+            z-index: 1;
+        }
+        .img7 {
+            top: 0px;
+            left: -5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Picture_1.png" class="image img1">
+        <img src="Picture_1.png" class="image img2">
+        <img src="Picture_1.png" class="image img3">
+        <img src="Picture_1.png" class="image img4">
+        <img src="Picture_1.png" class="image img5">
+        <img src="Picture_1.png" class="image img6">
+        <img src="Picture_1.png" class="image img7">
+    </div>
+</body>
+</html>

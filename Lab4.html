@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-Down Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .menu {
+            display: flex;
+            position: relative;
+        }
+        .menu-item {
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            width: 150px;
+            cursor: pointer;
+        }
+        .faculty {
+            background-color: blue;
+            position: relative;
+        }
+        .students {
+            background-color: green;
+            position: relative;
+        }
+        .students:hover {
+            background-color: red;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 186px;
+            background-color: white;
+        }
+        .faculty .dropdown {
+            border: 2px solid blue;
+        }
+        .students .dropdown {
+            border: 2px solid green;
+        }
+        .dropdown div {
+            padding: 10px;
+            color: black;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            border-bottom: 2px solid blue;
+        }
+        .faculty .dropdown div:last-child {
+            border-bottom: none;
+        }
+        .students .dropdown div {
+            border-bottom: none;
+        }
+        .dropdown div:hover {
+            background-color: lightblue;
+        }
+        .faculty:hover .dropdown {
+            display: block;
+        }
+        .students:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-item faculty">
+            Faculty
+            <div class="dropdown">
+                <div>Schedules</div>
+                <div><strong>Courses</strong></div>
+                <div>Affiliation</div>
+                <div>Departments</div>
+            </div>
+        </div>
+        <div class="menu-item students">
+            Students
+            <div class="dropdown">
+                <div>Registration</div>
+                <div><strong>Courses</strong></div>
+                <div>Library</div>
+                <div>Support Centre</div>
+                <div>Clubs</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

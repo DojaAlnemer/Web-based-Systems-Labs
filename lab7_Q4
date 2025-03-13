@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html>
+<!--Doja Alnemer 2220002855-->
+<head>
+<title>Search form</title>
+<style type = "text/css">
+         label  {
+                float:left;
+                 color: #FF43A9;}
+         h1     {
+                color:rgb(142, 33, 133);
+                }    
+</style>
+</head>
+
+
+<body>
+<h1>Search</h1>
+<form method = "get" action = "https://www.google.com/search">
+<p><label> Search:</label>
+<input type = "text" name = "q">(Enter your search query here.)
+</p>
+<p><label> change language:</label>
+<input type = "text" name = "hl"> (Enter the language code here.)
+</p>
+<p><input type = "submit" name = "submit" value = "submit"></p>
+</form>
+</body>
+
+</html>
